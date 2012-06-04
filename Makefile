@@ -22,3 +22,6 @@ uninstall:
 
 clean:
 	rm -rf markdown.so
+
+test:
+	prove -fe arc t
