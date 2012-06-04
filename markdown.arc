@@ -1,6 +1,6 @@
 (require "ffi.arc")
 
-(w/ffi (string arclib* "/site/markdown") ; TODO: fix library path
+(w/ffi "markdown"
  (cdef arc-mkd-string  "arc_mkd_string"  cptr    (cstring cint))
  (cdef arc-mkd-cleanup "arc_mkd_cleanup" cvoid   (cptr))
  (cdef arc-markdown    "arc_markdown"    cstring (cptr cint)))
